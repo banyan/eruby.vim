@@ -9,7 +9,7 @@
 " 			au! BufRead,BufNewFile *.rhtml		setfiletype eruby
 " 		augroup END
 "
-"	You will have to restart vim for this to take effect.  In any case it 
+"	You will have to restart vim for this to take effect.  In any case it
 "	is a good idea to read ":he new-filetype" so that you know what is going
 "	on, and why the above lines work.
 
@@ -32,8 +32,8 @@ syn region erubyBlock matchgroup=erubyRubyDelim start=#<%=\?# end=#%># keepend c
 syn region erubyComment start=+<%#+ end=#%># keepend
 syn match erubyEnd #\<end\>#
 
-hi link erubyRubyDelim todo
-hi link erubyComment comment
+hi link erubyRubyDelim Delimiter
+hi link erubyComment   Comment
 hi link erubyEnd rubyControl
 
 " vim: set ts=4 sw=4:
